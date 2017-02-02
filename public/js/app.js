@@ -9,4 +9,5 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     templateUrl: './views/uploadRecipes.html'
     })
 
+
 }]);
