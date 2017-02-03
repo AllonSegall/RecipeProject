@@ -1,13 +1,23 @@
-var app = angular.module('recipeProject', ['ui.router']);
+var app = angular.module('recipeProject', ['ui.router', 'ngTagsInput']);
 
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
   $stateProvider
-    .state('upload', {
+  .state('home', {
+    url: '/home',
+    templateUrl: '../views/home.html'
+  })
+  .state('upload', {
     url: '/upload',
     controller: 'uploadCtrl',
-    templateUrl: './views/uploadRecipes.html'
-    })
+    templateUrl: '../views/uploadRecipes.html'
+  })
+  .state('dashboard', {
+    url: '/dashboard',
+    controller: 'dashCtrl',
+    templateUrl: '../views/dashboard.html'
+  })
 
+  $urlRouterProvider.otherwise('/home');
 
 }]);

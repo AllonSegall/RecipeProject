@@ -7,16 +7,17 @@
 
   <div class="form-group">
       <label for="exampleInputEmail1">Main Ingredients</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <!-- <input type="text" class="form-control" placeholder="Enter Ingredients"> -->
+      <tags-input ng-model="tags"></tags-input>
       <small class="form-text text-muted"> This is what other people will search (no salt, peper or other spices are needed here) </small>
     </div>
 
   <div class="form-group">
     <label for="exampleTextarea">How it's made?</label>
-    <textarea class="form-control" rows="3"></textarea>
+    <textarea class="form-control" rows="8"></textarea>
   </div>
   <div class="form-group">
-    <label for="exampleInputFile">File input</label>
+    <label for="exampleInputImage">Upload an image</label>
     <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
     <small id="fileHelp" class="form-text text-muted">Upload a photo related to your recipe (you don't have to)</small>
   </div>

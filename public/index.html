@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="bootstrap\dist\css\bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="ng-tags-input\build\ng-tags-input.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/tags.css"> -->
     <title>Recipe Project</title>
   </head>
   <body ng-app="recipeProject" ng-controller="mainCtrl as main">
@@ -19,10 +21,10 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/upload">Upload Recipe</a>
+                        <a href="#/upload">Upload Recipe</a>
                     </li>
                     <li>
-                        <a href="#">My Recipes</a>
+                        <a href="#/dashboard">Profile</a>
                     </li>
                     <li>
                         <a href="#">Explore</a>
@@ -33,7 +35,7 @@
 
             <!-- Page Content -->
             <div id="page-content-wrapper">
-                <div ng-view></div>
+                <div ui-view></div>
             </div>
             <!-- /#page-content-wrapper -->
 
@@ -44,8 +46,11 @@
     <script src="jquery\dist\jquery.min.js"></script>
     <script type="text/javascript" src="angular-ui-router\release\angular-ui-router.min.js"></script>
     <script type="text/javascript" src="angular-route\angular-route.min.js"></script>
+    <script type="text/javascript" src="ng-tags-input\build\ng-tags-input.min.js"></script>
     <script type="text/javascript" src="js\app.js"> </script>
     <script type="text/javascript" src="js\Services\mainService.js"> </script>
     <script type="text/javascript" src="js\Controllers\mainCtrl.js"> </script>
+    <script type="text/javascript" src="js\Controllers\uploadCtrl.js"> </script>
+
   </body>
 </html>
